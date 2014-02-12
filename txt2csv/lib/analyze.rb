@@ -31,7 +31,14 @@ end
 
 regex_hash = Hash[regex_hash.sort_by{ |name, num| num }.reverse]
 
-puts regex_hash
+
+
+
+regex_hash.each { |name, num| puts "#{name} #{num}" }
+
+
+
+# regex_hash { |reg_out| reg_out << %w{my data here} } 
 
 # throw away the command line option in ARGV so we can get to STDIN
 
